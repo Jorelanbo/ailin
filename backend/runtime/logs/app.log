@@ -1,0 +1,390 @@
+2017-03-27 17:41:45 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message '您没有执行此操作的权限。' in D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('common/site/ind...', Array)
+#9 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpStudy\WWW\ailing\backend\web\index.php(27): yii\base\Application->run()
+#11 {main}
+2017-03-27 17:41:44 [::1][2][-][info][application] $_GET = [
+    'r' => 'common/site/index'
+]
+
+$_COOKIE = [
+    'language' => 'zh-cn'
+    'currency' => 'USD'
+    '__atuvc' => '1|10'
+    'Phpstorm-c5e260f1' => '079ea9ed-7502-459f-aa04-30c3f6260372'
+    '_identity-merchant' => 'ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a:2:{i:0;s:18:\"_identity-merchant\";i:1;s:47:\"[11,\"cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy\",2592000]\";}'
+    '_identity-frontend' => 'efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+    'pgv_pvi' => '5671770112'
+    'advanced_search_status' => '{\"supply/supply/index\":\"none\"}'
+    'phpsession' => 'qoth50dhjtn9eq2r2uuamgt3t4'
+    '_csrf-backend' => '06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv\";}'
+    'advanced-backend' => 'gmph7qvv5nuc398lc2tmip8q82'
+    '_identity-backend' => 'd74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    'HTTP_COOKIE' => 'language=zh-cn; currency=USD; __atuvc=1%7C10; Phpstorm-c5e260f1=079ea9ed-7502-459f-aa04-30c3f6260372; _identity-merchant=ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-merchant%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy%22%2C2592000%5D%22%3B%7D; _identity-frontend=efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D; pgv_pvi=5671770112; advanced_search_status={%22supply/supply/index%22:%22none%22}; phpsession=qoth50dhjtn9eq2r2uuamgt3t4; _csrf-backend=06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv%22%3B%7D; advanced-backend=gmph7qvv5nuc398lc2tmip8q82; _identity-backend=d74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '.;%COMPOSER_HOME%\\bin;D:\\phpStudy\\php\\php-5.4.45;%JAVA_HOME%\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\JS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/ailing/backend/web/index.php'
+    'REMOTE_PORT' => '56774'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=common%2Fsite%2Findex'
+    'REQUEST_URI' => '/ailing/backend/web/index.php?r=common%2Fsite%2Findex'
+    'SCRIPT_NAME' => '/ailing/backend/web/index.php'
+    'PHP_SELF' => '/ailing/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1490607704.282
+    'REQUEST_TIME' => 1490607704
+]
+2017-03-27 18:05:23 [::1][2][95b5btm99juhvs2v995heon600][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message '您没有执行此操作的权限。' in D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('datas/employee/...', Array)
+#9 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpStudy\WWW\ailing\backend\web\index.php(27): yii\base\Application->run()
+#11 {main}
+2017-03-27 18:05:22 [::1][2][95b5btm99juhvs2v995heon600][info][application] $_GET = [
+    'r' => 'datas/employee/index'
+]
+
+$_COOKIE = [
+    'language' => 'zh-cn'
+    'currency' => 'USD'
+    '__atuvc' => '1|10'
+    'Phpstorm-c5e260f1' => '079ea9ed-7502-459f-aa04-30c3f6260372'
+    '_identity-merchant' => 'ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a:2:{i:0;s:18:\"_identity-merchant\";i:1;s:47:\"[11,\"cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy\",2592000]\";}'
+    '_identity-frontend' => 'efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+    'pgv_pvi' => '5671770112'
+    'advanced_search_status' => '{\"supply/supply/index\":\"none\"}'
+    'phpsession' => 'qoth50dhjtn9eq2r2uuamgt3t4'
+    '_csrf-backend' => '06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv\";}'
+    'advanced-backend' => '95b5btm99juhvs2v995heon600'
+    '_identity-backend' => 'd74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/ailing/backend/web/index.php?r=common%2Fsite%2Flogin'
+    'HTTP_COOKIE' => 'language=zh-cn; currency=USD; __atuvc=1%7C10; Phpstorm-c5e260f1=079ea9ed-7502-459f-aa04-30c3f6260372; _identity-merchant=ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-merchant%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy%22%2C2592000%5D%22%3B%7D; _identity-frontend=efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D; pgv_pvi=5671770112; advanced_search_status={%22supply/supply/index%22:%22none%22}; phpsession=qoth50dhjtn9eq2r2uuamgt3t4; _csrf-backend=06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv%22%3B%7D; advanced-backend=95b5btm99juhvs2v995heon600; _identity-backend=d74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '.;%COMPOSER_HOME%\\bin;D:\\phpStudy\\php\\php-5.4.45;%JAVA_HOME%\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\JS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/ailing/backend/web/index.php'
+    'REMOTE_PORT' => '57296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=datas%2Femployee%2Findex'
+    'REQUEST_URI' => '/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    'SCRIPT_NAME' => '/ailing/backend/web/index.php'
+    'PHP_SELF' => '/ailing/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1490609121.996
+    'REQUEST_TIME' => 1490609121
+]
+2017-03-27 18:26:55 [::1][2][95b5btm99juhvs2v995heon600][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 2 for yii\helpers\BaseArrayHelper::map(), called in D:\phpStudy\WWW\ailing\backend\modules\datas\views\employee\index.php on line 43 and defined' in D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php:498
+Stack trace:
+#0 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(498): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'D:\\phpStudy\\WWW...', 498, Array)
+#1 D:\phpStudy\WWW\ailing\backend\modules\datas\views\employee\index.php(43): yii\helpers\BaseArrayHelper::map(Array)
+#2 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(328): require('D:\\phpStudy\\WWW...')
+#3 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#4 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(app\modules\datas\controllers\EmployeeController))
+#5 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\modules\datas\controllers\EmployeeController))
+#6 D:\phpStudy\WWW\ailing\backend\modules\datas\controllers\EmployeeController.php(55): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\modules\datas\controllers\EmployeeController->actionIndex()
+#8 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#11 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('datas/employee/...', Array)
+#12 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\phpStudy\WWW\ailing\backend\web\index.php(27): yii\base\Application->run()
+#14 {main}
+2017-03-27 18:26:54 [::1][2][95b5btm99juhvs2v995heon600][info][application] $_GET = [
+    'r' => 'datas/employee/index'
+]
+
+$_COOKIE = [
+    'language' => 'zh-cn'
+    'currency' => 'USD'
+    '__atuvc' => '1|10'
+    'Phpstorm-c5e260f1' => '079ea9ed-7502-459f-aa04-30c3f6260372'
+    '_identity-merchant' => 'ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a:2:{i:0;s:18:\"_identity-merchant\";i:1;s:47:\"[11,\"cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy\",2592000]\";}'
+    '_identity-frontend' => 'efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+    'pgv_pvi' => '5671770112'
+    'advanced_search_status' => '{\"supply/supply/index\":\"none\"}'
+    'phpsession' => 'qoth50dhjtn9eq2r2uuamgt3t4'
+    '_csrf-backend' => '06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv\";}'
+    'advanced-backend' => '95b5btm99juhvs2v995heon600'
+    '_identity-backend' => 'd74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/ailing/backend/web/index.php?r=common%2Fsite%2Findex'
+    'HTTP_COOKIE' => 'language=zh-cn; currency=USD; __atuvc=1%7C10; Phpstorm-c5e260f1=079ea9ed-7502-459f-aa04-30c3f6260372; _identity-merchant=ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-merchant%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy%22%2C2592000%5D%22%3B%7D; _identity-frontend=efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D; pgv_pvi=5671770112; advanced_search_status={%22supply/supply/index%22:%22none%22}; phpsession=qoth50dhjtn9eq2r2uuamgt3t4; _csrf-backend=06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv%22%3B%7D; advanced-backend=95b5btm99juhvs2v995heon600; _identity-backend=d74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '.;%COMPOSER_HOME%\\bin;D:\\phpStudy\\php\\php-5.4.45;%JAVA_HOME%\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\JS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/ailing/backend/web/index.php'
+    'REMOTE_PORT' => '57514'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=datas%2Femployee%2Findex'
+    'REQUEST_URI' => '/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    'SCRIPT_NAME' => '/ailing/backend/web/index.php'
+    'PHP_SELF' => '/ailing/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1490610414.584
+    'REQUEST_TIME' => 1490610414
+]
+2017-03-27 18:29:35 [::1][2][95b5btm99juhvs2v995heon600][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in D:\phpStudy\WWW\ailing\backend\modules\datas\views\employee\index.php:45
+Stack trace:
+#0 D:\phpStudy\WWW\ailing\backend\modules\datas\views\employee\index.php(45): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\phpStudy\\WWW...', 45, Array)
+#1 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(328): require('D:\\phpStudy\\WWW...')
+#2 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#3 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(app\modules\datas\controllers\EmployeeController))
+#4 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\modules\datas\controllers\EmployeeController))
+#5 D:\phpStudy\WWW\ailing\backend\modules\datas\controllers\EmployeeController.php(55): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\datas\controllers\EmployeeController->actionIndex()
+#7 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('datas/employee/...', Array)
+#11 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\phpStudy\WWW\ailing\backend\web\index.php(27): yii\base\Application->run()
+#13 {main}
+2017-03-27 18:29:33 [::1][2][95b5btm99juhvs2v995heon600][info][application] $_GET = [
+    'r' => 'datas/employee/index'
+]
+
+$_COOKIE = [
+    'language' => 'zh-cn'
+    'currency' => 'USD'
+    '__atuvc' => '1|10'
+    'Phpstorm-c5e260f1' => '079ea9ed-7502-459f-aa04-30c3f6260372'
+    '_identity-merchant' => 'ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a:2:{i:0;s:18:\"_identity-merchant\";i:1;s:47:\"[11,\"cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy\",2592000]\";}'
+    '_identity-frontend' => 'efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+    'pgv_pvi' => '5671770112'
+    'advanced_search_status' => '{\"supply/supply/index\":\"none\"}'
+    'phpsession' => 'qoth50dhjtn9eq2r2uuamgt3t4'
+    '_csrf-backend' => '06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv\";}'
+    'advanced-backend' => '95b5btm99juhvs2v995heon600'
+    '_identity-backend' => 'd74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/ailing/backend/web/index.php?r=common%2Fsite%2Findex'
+    'HTTP_COOKIE' => 'language=zh-cn; currency=USD; __atuvc=1%7C10; Phpstorm-c5e260f1=079ea9ed-7502-459f-aa04-30c3f6260372; _identity-merchant=ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-merchant%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy%22%2C2592000%5D%22%3B%7D; _identity-frontend=efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D; pgv_pvi=5671770112; advanced_search_status={%22supply/supply/index%22:%22none%22}; phpsession=qoth50dhjtn9eq2r2uuamgt3t4; _csrf-backend=06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv%22%3B%7D; advanced-backend=95b5btm99juhvs2v995heon600; _identity-backend=d74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '.;%COMPOSER_HOME%\\bin;D:\\phpStudy\\php\\php-5.4.45;%JAVA_HOME%\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\JS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/ailing/backend/web/index.php'
+    'REMOTE_PORT' => '57517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=datas%2Femployee%2Findex'
+    'REQUEST_URI' => '/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    'SCRIPT_NAME' => '/ailing/backend/web/index.php'
+    'PHP_SELF' => '/ailing/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1490610573.814
+    'REQUEST_TIME' => 1490610573
+]
+2017-03-27 18:30:16 [::1][2][95b5btm99juhvs2v995heon600][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 2 for yii\helpers\BaseArrayHelper::map(), called in D:\phpStudy\WWW\ailing\backend\modules\datas\views\employee\index.php on line 45 and defined' in D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php:498
+Stack trace:
+#0 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(498): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'D:\\phpStudy\\WWW...', 498, Array)
+#1 D:\phpStudy\WWW\ailing\backend\modules\datas\views\employee\index.php(45): yii\helpers\BaseArrayHelper::map(Array)
+#2 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(328): require('D:\\phpStudy\\WWW...')
+#3 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#4 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(app\modules\datas\controllers\EmployeeController))
+#5 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\modules\datas\controllers\EmployeeController))
+#6 D:\phpStudy\WWW\ailing\backend\modules\datas\controllers\EmployeeController.php(55): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\modules\datas\controllers\EmployeeController->actionIndex()
+#8 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#11 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('datas/employee/...', Array)
+#12 D:\phpStudy\WWW\ailing\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\phpStudy\WWW\ailing\backend\web\index.php(27): yii\base\Application->run()
+#14 {main}
+2017-03-27 18:30:15 [::1][2][95b5btm99juhvs2v995heon600][info][application] $_GET = [
+    'r' => 'datas/employee/index'
+]
+
+$_COOKIE = [
+    'language' => 'zh-cn'
+    'currency' => 'USD'
+    '__atuvc' => '1|10'
+    'Phpstorm-c5e260f1' => '079ea9ed-7502-459f-aa04-30c3f6260372'
+    '_identity-merchant' => 'ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a:2:{i:0;s:18:\"_identity-merchant\";i:1;s:47:\"[11,\"cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy\",2592000]\";}'
+    '_identity-frontend' => 'efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+    'pgv_pvi' => '5671770112'
+    'advanced_search_status' => '{\"supply/supply/index\":\"none\"}'
+    'phpsession' => 'qoth50dhjtn9eq2r2uuamgt3t4'
+    '_csrf-backend' => '06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv\";}'
+    'advanced-backend' => '95b5btm99juhvs2v995heon600'
+    '_identity-backend' => 'd74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/ailing/backend/web/index.php?r=common%2Fsite%2Findex'
+    'HTTP_COOKIE' => 'language=zh-cn; currency=USD; __atuvc=1%7C10; Phpstorm-c5e260f1=079ea9ed-7502-459f-aa04-30c3f6260372; _identity-merchant=ce1836e2020e4beaffd2ef7d3607aff645bb3cc9882f5cb69295a50ee2c74245a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-merchant%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22cMfpqqZvniTSqGp5-1ShYvtdek6BKsAy%22%2C2592000%5D%22%3B%7D; _identity-frontend=efb7d6001ab85219afbb855eaacba60d978fedf3bb07f1b5f468399d00a76ce7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D; pgv_pvi=5671770112; advanced_search_status={%22supply/supply/index%22:%22none%22}; phpsession=qoth50dhjtn9eq2r2uuamgt3t4; _csrf-backend=06b97a2d10b9309b136471596744ff94db510352d7e1eb584a76a4ac26edff20a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ijK_7fEMBi7YlfP0sb8DYWJ7xrdvDGfv%22%3B%7D; advanced-backend=95b5btm99juhvs2v995heon600; _identity-backend=d74acf3d094da1f3d20cc5f7de5b086494d7ec664b919d51d0f99d79924e25dca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pjpDTgbqebLct5iW3eaWqmjdVbVeWOa0%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '.;%COMPOSER_HOME%\\bin;D:\\phpStudy\\php\\php-5.4.45;%JAVA_HOME%\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\JS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/ailing/backend/web/index.php'
+    'REMOTE_PORT' => '57520'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=datas%2Femployee%2Findex'
+    'REQUEST_URI' => '/ailing/backend/web/index.php?r=datas%2Femployee%2Findex'
+    'SCRIPT_NAME' => '/ailing/backend/web/index.php'
+    'PHP_SELF' => '/ailing/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1490610615.127
+    'REQUEST_TIME' => 1490610615
+]
